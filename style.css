@@ -109,6 +109,45 @@ section{
     transform: translatex(-50%) translatey(-50%);
 
 }
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3em; /* Reduce font size for heading */
+    }
+
+    .container {
+        justify-content: flex-start; /* Adjust centering */
+    }
+
+    .background {
+        transform: translateZ(-20px) scale(3.5); /* Adjust scaling for background */
+    }
+
+    .foreground {
+        transform: translateZ(-15px) scale(2); /* Adjust scaling for foreground */
+    }
+
+    .bg {
+        height: 300px; /* Reduce height of background sections */
+        background-attachment: scroll; /* Disable parallax effect for better performance on mobile */
+    }
+
+    .secheading {
+        font-size: 2rem; /* Reduce section heading size */
+        padding: 0 2rem; /* Adjust padding */
+    }
+
+    .text {
+        font-size: 1rem; /* Adjust text size */
+        padding: 0 1rem; /* Reduce padding */
+        margin: 2rem 0; /* Adjust margin */
+        top: 60%; /* Adjust position */
+    }
+
+    .desc {
+        padding: 0.5rem 1.5rem; /* Reduce padding inside the description box */
+    }
+}
 
 
 
